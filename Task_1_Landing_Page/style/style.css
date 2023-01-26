@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Montserrat:wght@300;400&family=Open+Sans:wght@300&family=Oswald:wght@300&family=PT+Sans&family=Poppins:wght@300;400&family=Raleway:wght@300;400&family=Roboto:wght@300;400&family=Slabo+13px&family=Slabo+27px&family=Source+Sans+Pro:wght@600;700&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+/*########### CSS Resets ############*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    background-color:rgb(209, 234, 242);
+    max-width: 1368px;
+}
+:root{
+    --primary-color:red;
+    --secondary-color:yellow;
+    --taritiary-color:blue;
+    --font-color: white;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul li{
+    list-style: none;
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    font-size: 2rem;
+}
+img{
+    height: 20rem;
+    width: 37rem;
+    padding: 10px;
+    border-radius: 1.5rem;
+}
+section h1{
+    text-align: center;
+}
+section h2{
+    text-align: center;
+}
+section{
+    margin-bottom: 30px;
+}
+textarea{
+    resize: none;
+}
+label,input, textarea, button{
+    display: block;
+}
+label {
+    font-size: 2.5rem;
+}
+input{
+    font-size: 3rem;
+}
+/*########### CSS utility classes ########*/
+.flex{
+    display: flex;
+}
+.container{
+    margin-inline: 100px;
+}
+
+/*########## Element Styling ############ */
+.nav-bar{
+    justify-content: space-between;
+    height: 100px;
+    /* border: 2px solid white; */
+    align-items: center;
+    
+}
+.menus{
+    padding: 30px;
+}
+.menus li a{
+    padding: 20px;
+    font-size: 2.2rem;
+}
+.about-img img{
+    width: 300px;
+    height: 400px;
+}
+.about-us h1{
+    text-align: center;
+    margin-top: 30px;
+}
+.About{
+    gap: 40px;
+}
+
+.About p{
+    margin-top: 20px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.our-services h1{
+    margin-top: 30px;
+ }
+
+.imgs{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+/*######### Our Delicious Items ############*/
+
+
+
+
+/*######### Contact Us ############*/
+.contact-us{
+    justify-content: center;
+    align-items: center;
+}
+
+footer{
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+
+
