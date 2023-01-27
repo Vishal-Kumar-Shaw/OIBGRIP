@@ -4,31 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Handy Temperature Converter</title>
-    <style>
-        body{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-    </style>
 </head>
 <body>
-    <h1>Temperature Converter</h1>
-    <form>
-        <input type="radio" name="temp-type" id="type" value="FtoC">
-        <label for="type">Farenhite to Celcius</label>
-        <input type="radio" name="temp-type" id="type" value="CtoF">
-        <label for="type">Celcius to Farenhite</label>
-        <br>
-        <label for="temp">Enter the Temperature</label>
-        <input type="number" id="temp"/>
-        <br>
-        <div id="result"></div>
-        <button type="button" id="btn" onclick="convert()">submit</button>
-    </form>
+    <div class="form">
+        <h1>Temperature Converter</h1>
+        <form>
+            <h3>Choose the type of conversion</h3>
+       
+            <input type="radio" name="temp-type" id="type" value="CtoF" checked>
+            <label for="temp-type" class="labelName">Celcius to Farenhite</label>
+            <input type="radio" name="temp-type" id="type" value="FtoC">
+            <label for="temp-type" class="labelName">Farenhite to Celcius</label>
+            <br>
+            <label for="temp">Enter the Temperature</label>
+            <input type="number" id="temp" name="temp"/>
+            <br>
+            <div id="result"></div>
+            <button type="button" id="btn" onclick="convert()">submit</button>
+        </form>
+    </div>
     <script src="./index.js"></script>
 </body>
 </html>

@@ -2,6 +2,10 @@ function convert() {
     /* Taking the value of input from the input box */
     const inputValue = document.getElementById('temp');
     const x = inputValue.value;
+    if(x==''){
+        alert('Please input value');
+        return;
+    }
     var result;
         const conversionType = document.getElementsByName('temp-type');
         let y;
@@ -13,10 +17,14 @@ function convert() {
         //console.log(y);
         if(y==='FtoC') {
             result = (((x-32)*5)/9).toFixed(3);
+            result+=" \u{00B0}C"
+            
 
         }
         else{
             result = (((x/5)*9)+32).toFixed(3);
+            result+=" \u{00B0}F"
         }
+        // console.log(typeof result)
         document.getElementById('result').innerHTML = result;
 }
