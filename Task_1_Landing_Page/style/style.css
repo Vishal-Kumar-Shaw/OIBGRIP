@@ -18,7 +18,7 @@ ul li{
     list-style: none;
 }
 h1{
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 h2{
     font-size: 2rem;
@@ -121,8 +121,8 @@ input:focus{
     flex-basis: auto;
  }
 .about-img img{
-    height: 550px;
-    width: 480px;
+    height: 420px;
+    width: 570px;
     border-radius: 6px;
 }
 .description{
@@ -175,6 +175,10 @@ form{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    
+}
+form label{
+    font-size: 20px;
 }
 .btn{
     display: block;

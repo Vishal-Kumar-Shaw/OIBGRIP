@@ -1,91 +1,350 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-</head>
-<body>
-    <nav>
-        <div class="container flex nav-bar">
-            <h1>V.K.Shaw</h1>
-            <div class="menus flex">
-                <ul class="flex">
-                    <li><a href="#" class="primary-button">Home</a></li>
-                    <li><a href="#" class="primary-button">About me</a></li>
-                    <li><a href="#" class="primary-button">My Skills</a></li>
-                    <li><a href="#" class="primary-button">My Projects</a></li>
-                    <li><a href="#" class="primary-button">Achievements</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <main>
-        <section>
-            <div class="container home flex"  style="border:2px solid black">
-                <img src="./images/pbg.png" alt="MyImg"/>
-                <div class="information" style="border:2px solid black">
-                    <h1>Hi! I'm <span>Vishal.</span></h1>
-                    <h2>MCA Final year Student</h2>
-                    <h2>NIT Kurukshetra</h2>
-                    <h2>A Fullstack MERN Developer</h2>
-                </div>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        </section>
-        <section>
-            <div class="container about-me flex">
-                <h1 class="hover-underline-animation">About Me</h1>
-                <h2>Hello Viewers! This is Vishal Kumar Shaw, a final year student of MCA at NIT Kurukshetra.
-                    I completed my graduation in 2020 from Kazi Nazrul University, Asansol(W.B). Then I appreared in NIMCET 2020 and got AIR-477 rank.Then i got opportuinity to get admission in prestegiuos National Institute of Kurukshetra.
-                    I usually do projects on pure HTML, CSS and Javascript and on the other hand, I use MERN stack for high level projects.
-                </h2>
-            </div>
-        </section>
-        <section>
-            <div class="container coursework">
-                <h1 class="hover-underline-animation">My Skills</h1>
-                <div class="subjects">
-                    <h1>Languages and Frameworks</h1>
-                    <ul>
-                        <li>C++</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                        <li>React Js.</li>
-                        <li>Node Js.</li>
-                        <li>Express Js.</li>
-                        <li>SQL</li>
-                    </ul>
-                    <h1>Tools</h1>
-                    <ul>
-                        <li>Git and Github</li>
-                        <li>Linux OS</li>
-                        <li>VS Code</li>
-                        <li>MySQL</li>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <!-- =====AOS ANIMATION===== -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div data-aos="slide-right">
+                    <a href="#" class="nav__logo">Vishal</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu" data-aos="slide-left">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
-            </div>
-        </section>
-        <section>
-            <div class="container Projects">
-                <h1 class="hover-underline-animation">My Projects</h1>
 
-            </div>
-        </section>
-        <section>
-            <div class="container Projects">
-                <h1 class="hover-underline-animation">Achievements and Responsibilities</h1>
-                <ul>
-                    <li><h2>Placement Coordinator at T&P cell, NIT Kurukshetra</h2></li>
-                    <li><h2>Got AIR - 477 in NIMCET 2020</h2></li>
-                    <li><h2>Helped more than 120 students to get placed</h2></li>
-                </ul>
-            </div>
-        </section>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
 
-    </main>
-</body>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data" data-aos="slide-right">
+                    <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Vishal,</span><br> Developer <br>and Learner.</h1>
+
+                    <a href="#contact" class="button">Contact</a>
+                </div>
+
+                <div class="home__social" data-aos="slide-right">
+                    <a href="https://www.linkedin.com/in/vishal-kumar-shaw/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://leetcode.com/_CaptainVishal/" class="home__social-icon" target="_blank"><iconify-icon icon="cib:leetcode"></iconify-icon></a>
+                    <a href="https://github.com/Vishal-Kumar-Shaw" class="home__social-icon" target="_blank"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__img" data-aos="slide-left">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/bgv.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about" >
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img"  data-aos="fade-right">
+                        <img src="./assets/img/pbg.png" alt="MyImage">
+                    </div>
+                    
+                    <div data-aos="fade-left">
+                        <h2 class="about__subtitle">I'am Vishal</h2>
+                        <p class="about__text">I am in final year of Master of Computer Applications(MCA) at National Institute of Technology(NIT), Kurukshetra.
+                            <br>Eariler, I did my Bachelor of Computer Application(BCA) from Kazi Nazrul University, West Bengal in 2020 with 8.72 CGPA.<br> I am a web developer having hands on experience of MERN stack. I did many small to large projects whose github and live link are given below.
+                        </p> 
+                        <h2 class="about__subtitle" style="margin-top: 15px">Why should you hire me?</h2>
+                        <p class="about__text">
+                            Specifically, If I say that I am keen to learn and quick to learn.I apply new technologies and techniques to create things.
+                            <br>if it is in web development or any domain, learning technologies by documentations, solving problems by stack overflow and  
+                            completing the task in a clearner and timely manner is my one of the best quality.
+                        </p>          
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid" data-aos="fade-right">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">I worked mainly in <strong>web technologies</strong> and also I have some knowledge of Data Science domain. I have mentioned my expertise in terms of percentage for a skill that i am aware of. <br><br> In Web development field, many things are prebuild and we have to just import them to our project and use them.</p>
+
+
+                        <div class="main-skill-box">
+                            <div class="sub-box">
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-html5 skills__icon'></i>
+                                    <span class="skills__name">HTML </span>
+                                </div>
+                                <div class="skills__bar skills__html">
+
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">95%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-css3 skills__icon'></i>
+                                    <span class="skills__name">CSS</span>
+                                </div>
+                                <div class="skills__bar skills__css">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxl-javascript skills__icon' ></i>
+                                    <span class="skills__name">JS</span>
+                                </div>
+                                <div class="skills__bar skills__js">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">65%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-paint skills__icon'></i>
+                                    <span class="skills__name">UX/UI </span>
+                                </div>
+                                <div class="skills__bar skills__ux">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">85%</span>
+                                </div>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__names">
+                                    <i class='bx bxs-paint skills__icon'></i>
+                                    <span class="skills__name">React</span>
+                                </div>
+                                <div class="skills__bar skills__ux">
+                                    
+                                </div>
+                                <div>
+                                    <span class="skills__percentage">50%</span>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="sub-box">
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-html5 skills__icon'></i>
+                                        <span class="skills__name">Node</span>
+                                    </div>
+                                    <div class="skills__bar skills__html">
+    
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">60%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-css3 skills__icon'></i>
+                                        <span class="skills__name">Express</span>
+                                    </div>
+                                    <div class="skills__bar skills__css">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">60%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxl-javascript skills__icon' ></i>
+                                        <span class="skills__name">MySQL</span>
+                                    </div>
+                                    <div class="skills__bar skills__js">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">75%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxs-paint skills__icon'></i>
+                                        <span class="skills__name">GitHub</span>
+                                    </div>
+                                    <div class="skills__bar skills__ux">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">85%</span>
+                                    </div>
+                                </div>
+                                <div class="skills__data">
+                                    <div class="skills__names">
+                                        <i class='bx bxs-paint skills__icon'></i>
+                                        <span class="skills__name">Python</span>
+                                    </div>
+                                    <div class="skills__bar skills__ux">
+                                        
+                                    </div>
+                                    <div>
+                                        <span class="skills__percentage">50%</span>
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+
+
+                    </div>
+                    
+                    <div data-aos="flip-left">              
+                        <img src="assets/img/bg2.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Projects</h2>
+
+                <div id="results" class="work__container bd-grid">
+                    
+                    
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact" data-aos="slide-down">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="message" id="msg" style="display: none;">
+                        Message Sent Successfully.
+                    </div>
+                    <form class="contact__form">
+                        <input type="text" id="cname" placeholder="Name" class="contact__input">
+                        <input type="email" id="cemail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="cmessage" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" onclick="contactme()" value="Contact Me" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer" data-aos="slide-up">
+            <p class="footer__title">Vishal Kumar Shaw</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/vishal.kumarshaw.77" class="footer__icon" target="_blank"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/vkshaw97/" target="_blank" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://twitter.com/_CaptainVishal" target="_blank" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
+        <script src="https://kit.fontawesome.com/5d59e8f58e.js" crossorigin="anonymous"></script>
+        <script>
+
+            function makeData(data){
+                let html = ``;
+                for(let i = 0; i < data.length; i++){
+                    html += `
+                    <div style="box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, .2);padding:2.5px">
+                        <a href="" class="work__img">
+                            <img src="assets/img/work${i+1}.jpg" alt="">
+                            <div style="background-color: #fff;padding-left: 5px;">
+                                <a href="${data[i]['Github Link']}" target="_blank"><h3 style="text-align: center;">${data[i]['Project Name']}</h3></a>
+                                <p>${data[i]['Tools and Tech']}</p>
+                            </div>
+                            
+                        </a>
+                    </div>
+                `;
+                }
+                document.getElementById('results').innerHTML = html;
+            }
+
+            async function getDataFromExcel(){
+                let scripturl = 'https://script.google.com/macros/s/AKfycbzgVqA-lku4whkNfjuIGVDC27sa0BR_u9PnLE6rEfsDOcoY8kaet21egbzusH_M9zGf/exec';
+                let data = await fetch(scripturl);
+                data = await data.json();
+                makeData(data);
+                console.log(data);
+            }
+            getDataFromExcel();
+
+            async function contactme(){
+                let cname = document.getElementById('cname').value;
+                let cemail = document.getElementById('cemail').value;
+                let cmessage = document.getElementById('cmessage').value;
+                object = {
+                    name:cname,
+                    email:cemail,
+                    message:cmessage
+                };
+                
+                let scripturl = "https://script.google.com/macros/s/AKfycbzVlBjtSSpaB1pswtDh_9rVeWI3SJlXpiMDNx0wD1jNskAborlqyVbYrHz8VHtHgjNe/exec";
+                let data = await fetch(scripturl, {
+                    method: "POST",
+                    body: JSON.stringify(object),
+                    mode: 'no-cors',
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8",
+                        'Access-Control-Allow-Origin':'*'
+                    }
+                });
+                document.getElementById('cname').value = '';
+                document.getElementById('cemail').value = '';
+                document.getElementById('cmessage').value = '';
+                document.getElementById('msg').style.display = 'block';
+                setTimeout(()=>{
+                    document.getElementById('msg').style.display = 'none';
+                },2000);
+            }
+        </script>
+         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+         <script>
+           AOS.init({
+            offset: 180, // offset (in px) from the original trigger point
+            duration: 1000, 
+           });// values from 0 to 3000, with step 50ms
+         </script>
+    </body>
 </html>

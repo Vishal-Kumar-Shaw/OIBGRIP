@@ -6,13 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhumika's Recipe</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .typewriter h1 {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid orange; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+        typing 3.5s steps(40, end),
+        blink-caret .75s step-end infinite;
+        }
+
+        /* The typing effect */
+        @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: orange; }
+        }
+    </style>
 </head>
+
 <body>
     <main>
         <nav>
             <div class="container flex nav-bar">
-                <img src="./images/logo.jfif" alt="logo-img" height="20px" width="100px"/>
-                <div class="menus">
+                <img src="./images/logo.jfif" alt="logo-img" height="20px" width="100px" data-aos="slide-right"/>
+                <div class="menus" data-aos="slide-left">
                     <ul class="flex ul">
                         <li>
                             <a href="#">Home</a>
@@ -35,24 +61,28 @@
         </nav>
         <section class="about-us" id="About-us">
             <div class="About container flex">
-                <div class="about-img">
-                    <img src="./images/bg7.webp" alt="into-img"/>
+                <div class="about-img" data-aos="slide-right">
+                    <img src="./images/rcp.jpg" alt="into-img"/>
                 </div>
-                <div class="description">
-                    <h1>Bhumika's Recipe</h1>
+                <div class="description" data-aos="slide-left">
+                    <div class="typewriter">
+                        <h1 style="text-align:left; color:red; font-size: 5rem;">Bhumika's </h1>
+
+                    </div>
+                    <h1 style="text-align:left; color:rgb(155, 4, 155);font-size: 5rem;">Recipe</h1>
                     <h1 style="text-align:left">Who we are?</h1>
-                    <p>We are a company having group of country's one of the top chefs. </p>
+                     <b> <p style="color:rgb(32, 14, 150)">We are a company having group of country's and your region's one of the top chefs. </p></b>
                     <h1 style="text-align:left; margin-top:20px">What we do?</h1>
-                    <p>We provide services in your occasions and make your tongue taste delicious. </p>
+                    <b><p style="color:rebeccapurple">We provide services in your occasions and make it delicious. </p></b>
                 </div>
             </div>
 
         </section>
         <section class="our-services" id="Our-Services">
             <div class="container">
-                <h1 class="headings">Our Services</h1>
-                <div class="imgs flex">
-                    <div>
+                <h1 class="headings" data-aos="fade-down">Our Services</h1>
+                <div class="imgs flex" data-aos="fade-up">
+                    <div >
                         <img src="./images/imf1.jpg" alt="Marrige food">
                         <h2>Marriages</h2>
                     </div>
@@ -81,8 +111,8 @@
         </section>
         <section class="our-delicious" id="Our-Delicious">
             <div class="container">
-                <h1 class="headings">Our Delicious</h1>
-                <div class="imgs flex">
+                <h1 class="headings" data-aos="fade-down">Our Delicious</h1>
+                <div class="imgs flex" data-aos="fade-up">
                     <div>
                         <img src="./images/chole.jpg" alt="Marrige food">
                         <h2>Chhole Bhature</h2>
@@ -110,7 +140,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact-us flex" id="Contact-Us">
+        <section class="contact-us flex" id="Contact-Us" data-aos="zoom-in">
             <div class="container Contact flex">
                 <h1 class="headings">Contact Us</h1>
                 <form action="">
@@ -134,6 +164,19 @@
 
     <script src="https://kit.fontawesome.com/5d59e8f58e.js" crossorigin="anonymous"></script>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+       offset: 180, // offset (in px) from the original trigger point
+       duration: 1000, 
+      });// values from 0 to 3000, with step 50ms
+    </script>
+   <script src="<https://unpkg.com/typeit@8.7.1/dist/index.umd.js>"></script>
+   <script>
+     new TypeIt("#myElement", {
+       strings: "This is what will be typed!",
+     }).go();
+   </script>
 
 </body>
 

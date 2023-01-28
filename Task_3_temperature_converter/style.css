@@ -27,6 +27,12 @@ body{
     text-align: center;
     margin-bottom: 20px;
 }
+.form h1{
+    color: white;
+}
+.form h3{
+    color: lightgrey;
+}
 
 .labelName{
     display: inline;
@@ -55,7 +61,7 @@ input[type=radio]{
 }
 #btn{
     margin-left: 160px;
-    background-color: rgb(213, 222, 225);
+    background-color: rgb(255, 255, 255);
     outline: none;
     border: none;
     padding: 10px 20px;
@@ -64,6 +70,10 @@ input[type=radio]{
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
+    cursor: pointer;
+}
+#btn:hover{
+    background-color: aliceblue;
 }
 #result{
     margin-top: 8px;
