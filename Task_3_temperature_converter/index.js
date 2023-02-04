@@ -28,3 +28,10 @@ function convert() {
         // console.log(typeof result)
         document.getElementById('result').innerHTML = result;
 }
+function clearinput(){
+    console.log('clear is called');
+    const input = document.getElementById('temp');
+    input.value="";
+    const result = document.getElementById('result');
+    result.innerHTML="";
+}
